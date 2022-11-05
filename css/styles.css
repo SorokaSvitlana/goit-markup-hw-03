@@ -270,7 +270,7 @@ ul {
    background-color: var(--section-backgroud-color); 
 }
 
-.our-item {
+.our-list .our-item {
     background-color: var(--primary-background-color);
 }
  
