@@ -42,7 +42,7 @@ ul {
     display: block;
   }
 
-.link {
+.link  {
     text-decoration: none;
 }
 
@@ -63,6 +63,15 @@ ul {
     margin: 0 auto;
     outline: 2px solid red;
   }
+
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin: 0 auto 50px;
+   }
   
 
 /* ----------- ШАПКА-----------*/
@@ -95,6 +104,7 @@ ul {
 .list-nav  {
     display: flex;
     gap: 50px;
+    margin: 0;
 }
 .list-info {
     display: flex;
@@ -151,7 +161,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-title-color);
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -169,6 +179,7 @@ ul {
     min-width: 216px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
     
 
 }
@@ -196,12 +207,11 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  
+    .features.section {
+        padding-bottom: 0;
+    }
 
-.features-container {
-    display: flex;
-    padding-top: 94px;
-
-}
 .features-list {
     display: flex;
     gap: 30px;
@@ -214,7 +224,7 @@ ul {
     color: var(--subtitle-text-color);
 }
 .features-item {
-    flex-basis: calc(100% - 90px) / 4)
+    flex-basis: calc((100% - 90px)/4)
 }
 .features-text {
     font-size: 14px;
@@ -233,9 +243,8 @@ ul {
 .about-list {
     display: flex;
     gap: 30px;
-    padding-top: 50px;
 }
-.about-title {
+/* .about-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -243,7 +252,7 @@ ul {
     color: var(--subtitle-text-color);
     margin: 0 auto;
     padding: 0 auto;
-}
+} */
 
 /* ----------- НАША КОМАНДА-----------*/
 .our-container {
@@ -252,25 +261,33 @@ ul {
     
 }
 
+.person {
+    padding-top: 30px ;
+    padding-bottom: 70px;
+
+}
 .our {
    background-color: var(--section-backgroud-color); 
+}
+
+.our-item {
+    background-color: var(--primary-background-color);
 }
  
 .our-list {
     display: flex;
     gap: 30px;
-    padding-top: 50px;
 }
 
 
-.our-title {
+/* .our-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin: 0 auto;
-}
+} */
 
 .our-item-name {
     font-weight: 500;
@@ -279,7 +296,6 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--subtitle-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -294,8 +310,7 @@ ul {
 /* -----------ПІДВАЛ-----------*/
 .footer-container {
     justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
  
 } 
 
@@ -307,6 +322,8 @@ ul {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hero-title-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-page .logo {
@@ -314,14 +331,17 @@ ul {
 }
 
 .all-logo {
+
     margin-bottom: 20px;
 }
-
+.footer-page  .logo  {
+    margin-right: 0;
+}
  .mail, .tel {
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-list {
-    margin-bottom: 9px;;
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-address {
@@ -330,25 +350,16 @@ ul {
 }
 
 /* -----------ПОРТФОЛІО----------- */
-.portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
 
-}
 
 
 .portfolio-items-nav {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     gap: 8px;
-    
-}
-.portfolio-nav {
-    display: flex;
     justify-content: center;
-    
-    
 }
+
 
 .portfolio-items {
     display: flex;
@@ -356,8 +367,9 @@ ul {
     flex-wrap: wrap;
 }
 .portfolio-item {
-    flex-basis: calc((100% - 60px)/9);
-    border-bottom: 1px solid #EEEEEE;
+    flex-basis: calc((100% - 60px)/3);
+    /* border-bottom: 1px solid #EEEEEE; */
+    text-decoration: none;
 }
 
 .portfolio-btn {
@@ -384,6 +396,7 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--subtitle-text-color);
+    margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -391,4 +404,8 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+.example {
+padding: 20px 24px;
 }
