@@ -110,9 +110,7 @@ ul {
     display: flex;
     gap: 50px;
 }
-.list-nav {
-    margin-right: 344px;
-}
+
 .item-nav {
     font-weight: 500;
     font-size: 14px;
@@ -222,6 +220,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--subtitle-text-color);
+    margin-bottom: 10px;
 }
 .features-item {
     flex-basis: calc((100% - 90px)/4)
@@ -263,7 +262,7 @@ ul {
 
 .person {
     padding-top: 30px ;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 
 }
 .our {
@@ -407,5 +406,10 @@ ul {
 }
 
 .example {
-padding: 20px 24px;
+    padding: 20px 24px;
+    /* border-right:1px solid #EEEEEE; 
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE; */
+    border: 1px  solid #EEEEEE;
+    border-top: 0;
 }
